@@ -1,6 +1,7 @@
 <template>
   <footer>
       <section class="container d-flex">
+          <!-- Left Top Footer -->
          <div class="left-footer w-50 d-flex py-3">
               <nav class="footer-link-column pe-2">
                 <h4 class="pb-2">DC COMICS</h4>
@@ -33,6 +34,7 @@
                   </ul>
               </nav>
          </div>
+         <!-- Right Top Footer -->
          <div class="right-footer w-50">
          </div>
       </section>

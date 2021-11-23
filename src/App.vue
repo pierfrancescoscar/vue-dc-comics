@@ -6,6 +6,8 @@
     <Main />
     <!-- Footer -->
     <Footer />
+    <!-- Bottom Footer -->
+    <BottomFooter />
   </div>
 </template>
 
@@ -13,6 +15,7 @@
 import Header from '@/components/Header.vue';
 import Main from '@/components/Main.vue';
 import Footer from '@/components/Footer.vue';
+import BottomFooter from '@/components/BottomFooter.vue';
 
 export default {
   name: 'App',
@@ -20,6 +23,7 @@ export default {
     Header,
     Main,
     Footer,
+    BottomFooter,
   }
 }
 </script>

@@ -14,6 +14,10 @@
     padding: 2rem;
 }
 
+.p-4 {
+    padding: 3rem;
+}
+
 .pe-1 {
     padding-right: 0.5rem;
 }
@@ -60,4 +64,14 @@
 
 .flex-end {
     justify-content: flex-end;
+}
+
+// List Reset
+
+.list-unstyled {
+    list-style: none;
+}
+
+.no-decoration {
+    text-decoration: none;
 }

@@ -1,9 +1,11 @@
 <template>
 
-  <main class="p-3">
+  <main class="p-4">
       <!-- Main Section - Content goes here -->
       <section class="container">
+
         <h2>Content goes here</h2>
+        
       </section>
   </main>
 

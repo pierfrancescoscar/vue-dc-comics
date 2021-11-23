@@ -1,14 +1,40 @@
 <template>
   <footer class="p-4">
       <section class="container">
-         <div class="left-footer w-50">
-              <nav>
+         <div class="left-footer w-50 d-flex">
+              <nav class="footer-link-column">
+                <h4 class="pb-2">DC COMICS</h4>
                   <ul>
-                      <li class="list-unstyled" v-for="(link, index) in dcComicsLink" :key="`link-${index}`">
-                          <a href="/">{{link.text}}</a>
+                      <li class="list-unstyled pb-2" v-for="(link, index) in dcComicsLink" :key="`link-${index}`">
+                          <a class="no-decoration" href="/">{{link.text}}</a>
+                      </li>
+                  </ul>
+                  <h4 class="pb-2">SHOP</h4>
+                  <ul>
+                      <li class="list-unstyled pb-2" v-for="(link, index) in shopLink" :key="`link-${index}`">
+                          <a class="no-decoration" href="/">{{link.text}}</a>
                       </li>
                   </ul>
               </nav>
+              <nav class="footer-link-column">
+                <h4 class="pb-2">DC</h4>
+                  <ul>
+                      <li class="list-unstyled pb-2" v-for="(link, index) in dcLink" :key="`link-${index}`">
+                          <a class="no-decoration" href="/">{{link.text}}</a>
+                      </li>
+                  </ul>
+              </nav>
+              <nav class="footer-link-column">
+                <h4 class="pb-2">SITES</h4>
+                  <ul>
+                      <li class="list-unstyled pb-2" v-for="(link, index) in sitesLink" :key="`link-${index}`">
+                          <a class="no-decoration" href="/">{{link.text}}</a>
+                      </li>
+                  </ul>
+              </nav>
+         </div>
+         <div class="right-footer w-50">
+             <img src="../assets/img/dc-logo.png" alt="dc-logo-blurred">
          </div>
       </section>
   </footer>
@@ -54,6 +80,84 @@ export default {
                     url: '/',
                     
                 },
+            ],
+            shopLink: [
+                {
+                    text: 'Shop DC',
+                    url: '/',
+                },
+                {
+                    text: 'Shop DC Collectibles',
+                    url: '/',
+                },
+            ],
+            dcLink: [
+                {
+                    text: 'Terms of Use',
+                    link: '/',
+                },
+                {
+                    text: 'Privacy Policy (new)',
+                    link: '/',
+                },
+                {
+                    text: 'Ad Choices',
+                    link: '/',
+                },
+                {
+                    text: 'Advertising',
+                    link: '/',
+                },
+                {
+                    text: 'Jobs',
+                    link: '/',
+                },
+                {
+                    text: 'Subscription',
+                    link: '/',
+                },
+                {
+                    text: 'Talent Workshop',
+                    link: '/',
+                },
+                {
+                    text: 'CPSC Certificates',
+                    link: '/',
+                },
+                {
+                    text: 'Ratings',
+                    link: '/',
+                },
+                {
+                    text: 'Shop Help',
+                    link: '/',
+                },
+                {
+                    text: 'Contact Us',
+                    link: '/',
+                },
+            ],
+            sitesLink: [
+                {
+                    text:'DC',
+                    url: '/',
+                },
+                {
+                    text:'Mad Magazine',
+                    url: '/',
+                },
+                {
+                    text:'DC Kids',
+                    url: '/',
+                },
+                {
+                    text:'DC Universe',
+                    url: '/',
+                },
+                {
+                    text:'DC Power Visa',
+                    url: '/',
+                },
             ]
         }
     }
@@ -67,4 +171,13 @@ export default {
         background-size: cover;
         background-position: center;
     }
+        a {
+            color: grey;
+            font-size: 12px;
+        }
+
+        h4 {
+            color: white;
+            font-weight: 600;
+        }
 </style>

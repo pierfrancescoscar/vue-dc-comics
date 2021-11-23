@@ -5,7 +5,7 @@
           <button class="text-uppercase p-2">Sign-up now!</button>
       </div>
 
-      <div class="right-bottom-footer w-50 d-flex">
+      <div class="right-bottom-footer w-50 d-flex align-items-center">
           <h4 class="pe-2 text-uppercase">Follow us</h4>
           <div class="social-links">
               <img class="pe-2" src="../assets/img/footer-facebook.png" alt="">
@@ -38,4 +38,7 @@ export default {
             color: white;
             border: 1px solid #0282F9;
         }
+    .social-links {
+        cursor: pointer;
+    }
 </style>

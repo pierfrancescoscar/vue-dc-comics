@@ -94,5 +94,11 @@ export default {
             font-size: 14px;
             color: black;
             font-weight: 600;
+            &:hover {
+            color: #0C7CEC;
         }
+        }
+        
+
+
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <footer class="p-4">
-      <section class="container">
-         <div class="left-footer w-50 d-flex">
-              <nav class="footer-link-column">
+  <footer>
+      <section class="container d-flex">
+         <div class="left-footer w-50 d-flex py-3">
+              <nav class="footer-link-column pe-2">
                 <h4 class="pb-2">DC COMICS</h4>
                   <ul>
                       <li class="list-unstyled pb-2" v-for="(link, index) in dcComicsLink" :key="`link-${index}`">
@@ -16,7 +16,7 @@
                       </li>
                   </ul>
               </nav>
-              <nav class="footer-link-column">
+              <nav class="footer-link-column pe-2">
                 <h4 class="pb-2">DC</h4>
                   <ul>
                       <li class="list-unstyled pb-2" v-for="(link, index) in dcLink" :key="`link-${index}`">
@@ -34,7 +34,6 @@
               </nav>
          </div>
          <div class="right-footer w-50">
-             <img src="../assets/img/dc-logo.png" alt="dc-logo-blurred">
          </div>
       </section>
   </footer>
@@ -170,6 +169,7 @@ export default {
         background-image: url('../assets/img/footer-bg.jpg');
         background-size: cover;
         background-position: center;
+        
     }
         a {
             color: grey;
@@ -180,4 +180,10 @@ export default {
             color: white;
             font-weight: 600;
         }
+
+    .right-footer {
+        background-image: url('../assets/img/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position-y: center;
+    }
 </style>

@@ -11,7 +11,7 @@
       <nav>
           <ul>
               <li v-for="(link, index) in menuLink" :key="`link-${index}`">
-                  <a class="pe-1" :class="{active: link.current}" :href="link.url">
+                  <a class="me-1" :class="{active: link.current}" :href="link.url">
                       {{link.text}}
                     </a>
               </li>

@@ -20,7 +20,11 @@ export default {
 
 <style scoped lang="scss">
 .card {
-    background: red;
-}
 
+    h4 {
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
 </style>

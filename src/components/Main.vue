@@ -17,7 +17,7 @@
 
 <script>
 import Card from '@/components/Card.vue';
-import dcComics from '@/data/dc-comics.js';
+import dcComics from '../data/dc-comics.js';
 
 export default {
     name: 'Main',

@@ -3,7 +3,7 @@
             <section class="container">
                 <ul>
                     <li class="list-unstyled" v-for="(item, index) in shopList" :key="`shopitem-${index}`">
-                        <img :src="item.img" :alt="item.name">
+                        <img class="pe-1" :src="item.img" :alt="item.name">
                         <a class="no-decoration text-uppercase" href="/">
                         {{item.name}}
                         </a>

@@ -3,7 +3,7 @@
   <main class="p-4">
       <!-- Main Section - Content goes here -->
       <section class="container">
-        <h3 class="text-uppercase">Current Series</h3>
+        <span class="text-uppercase p-2">Current Series</span>
         <ul class="cards">
             <li v-for="(card, index) in cards" :key="`card-${index}`">
                 <Card :thumb="card.thumb" :series="card.series" />
@@ -37,11 +37,12 @@ export default {
     main {
         background-color: #1C1C1C;
     }
-        h3 {
+        span {
             color: white;
-            background-color: #0282F9;
-            max-width: 15%;
-            text-align: center;
+            font-weight: 600;
+            background: #0282F9;
+            position: absolute;
+            top: 60%;
         }
 
         ul {

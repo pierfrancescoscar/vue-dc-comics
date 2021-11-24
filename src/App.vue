@@ -2,6 +2,8 @@
   <div id="app">
     <!-- Header -->
     <Header />
+    <!-- Hero -->
+    <Hero />
     <!-- Main -->
     <Main />
     <!-- Footer -->
@@ -12,6 +14,7 @@
 </template>
 
 <script>
+import Hero from '@/components/Hero.vue';
 import Header from '@/components/Header.vue';
 import Main from '@/components/Main.vue';
 import Footer from '@/components/Footer.vue';
@@ -24,6 +27,7 @@ export default {
     Main,
     Footer,
     BottomFooter,
+    Hero,
   }
 }
 </script>

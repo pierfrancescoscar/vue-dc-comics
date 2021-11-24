@@ -4,7 +4,7 @@
                 <ul>
                     <li class="list-unstyled" v-for="(item, index) in shopList" :key="`shopitem-${index}`">
                         <img :src="item.img" :alt="item.name">
-                        <a href="/">
+                        <a class="no-decoration text-uppercase" href="/">
                         {{item.name}}
                         </a>
                     </li>
@@ -25,23 +25,23 @@ export default {
 
                 },
                 {
-                    img: require('@/assets/img/buy-comics-digital-comics.png'),
-                    name: 'Digital Comics',
+                    img: require('@/assets/img/buy-comics-merchandise.png'),
+                    name: 'DC Merchandise',
 
                 },
                 {
-                    img: require('@/assets/img/buy-comics-digital-comics.png'),
-                    name: 'Digital Comics',
+                    img: require('@/assets/img/buy-comics-subscriptions.png'),
+                    name: 'Subscription',
 
                 },
                 {
-                    img: require('@/assets/img/buy-comics-digital-comics.png'),
-                    name: 'Digital Comics',
+                    img: require('@/assets/img/buy-comics-shop-locator.png'),
+                    name: 'Comic Shop Locator',
 
                 },
                 {
-                    img: require('@/assets/img/buy-comics-digital-comics.png'),
-                    name: 'Digital Comics',
+                    img: require('@/assets/img/buy-dc-power-visa.svg'),
+                    name: 'DC Power VISA',
 
                 },
                 
@@ -59,6 +59,19 @@ export default {
     ul {
         display: flex;
         justify-content: center;
+        align-items: center;
+        justify-content: space-between;
     }
+        a {
+            color: white;
+            font-weight: 400;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+        
 
 </style>

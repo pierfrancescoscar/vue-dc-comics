@@ -6,6 +6,8 @@
     <Hero />
     <!-- Main -->
     <Main />
+    <!-- Banner -->
+    <Banner />
     <!-- Footer -->
     <Footer />
     <!-- Bottom Footer -->
@@ -20,6 +22,7 @@ import Main from '@/components/Main.vue';
 import Footer from '@/components/Footer.vue';
 import BottomFooter from '@/components/BottomFooter.vue';
 import Card from '@/components/Card.vue';
+import Banner from '@/components/Banner.vue';
 
 export default {
   name: 'App',
@@ -30,6 +33,7 @@ export default {
     BottomFooter,
     Hero,
     Card,
+    Banner,
   }
 }
 </script>

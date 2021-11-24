@@ -19,6 +19,7 @@ import Header from '@/components/Header.vue';
 import Main from '@/components/Main.vue';
 import Footer from '@/components/Footer.vue';
 import BottomFooter from '@/components/BottomFooter.vue';
+import Card from '@/components/Card.vue';
 
 export default {
   name: 'App',
@@ -28,6 +29,7 @@ export default {
     Footer,
     BottomFooter,
     Hero,
+    Card,
   }
 }
 </script>

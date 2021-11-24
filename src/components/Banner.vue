@@ -2,7 +2,7 @@
     <div class="blue-banner p-3">
             <section class="container">
                 <ul>
-                    <li class="list-unstyled" v-for="(item, index) in shopList" :key="`shopitem-${index}`">
+                    <li class="list-unstyled d-flex align-items-center" v-for="(item, index) in shopList" :key="`shopitem-${index}`">
                         <img class="pe-1" :src="item.img" :alt="item.name">
                         <a class="no-decoration text-uppercase" href="/">
                         {{item.name}}

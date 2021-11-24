@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-      <img class="pb-2" :src="thumb" :alt="series">
+      <img class="pb-2 pe-1 square" :src="thumb" :alt="series">
       <h4 class="text-uppercase pb-2">{{ series }}</h4>
   </div>
 </template>

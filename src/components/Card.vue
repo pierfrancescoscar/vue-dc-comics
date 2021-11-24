@@ -1,7 +1,7 @@
 <template>
   <div class="card">
-      <img :src="thumb" :alt="series">
-      <h4>{{ series }}</h4>
+      <img class="pb-2" :src="thumb" :alt="series">
+      <h4 class="text-uppercase pb-2">{{ series }}</h4>
   </div>
 </template>
 

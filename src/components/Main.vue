@@ -5,11 +5,13 @@
       <section class="container">
         <span class="text-uppercase p-2">Current Series</span>
         <ul class="cards">
-            <li v-for="(card, index) in cards" :key="`card-${index}`">
+            <li class="list-unstyled pb-2" v-for="(card, index) in cards" :key="`card-${index}`">
                 <Card :thumb="card.thumb" :series="card.series" />
             </li>
         </ul>
-
+        <div class="load-more d-flex justify-content-center">
+            <button class="text-uppercase p-2">Load more</button>
+        </div>
       </section>
   </main>
 
@@ -52,6 +54,14 @@ export default {
             li {
                 width: calc(100% / 6);
             }
+
+        button {
+            border: none;
+            background: #0282F9;
+            color: white;
+            font-weight: 600;
+            
+        }
 
 
 </style>
